@@ -1,0 +1,177 @@
+/* Add some shadows to create a card effect */
+.app {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Clear floats */
+/* .container::after,
+.row::after {
+  /* content: ""; */
+/* clear: both; */
+/* display: table; */
+/* }  */
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.container h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+h1 {
+  text-align: center;
+  background: linear-gradient(
+    141deg,
+    rgb(161, 37, 37) 25%,
+    rgb(189, 67, 67) 40%,
+    rgb(243, 198, 198) 55%
+  );
+  color: rgb(255, 254, 254);
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 70px;
+  padding-top: 0;
+  height: 50px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h1:f1irst-of-type {
+  animation: showup 7s infinite;
+}
+
+h1:last-of-type {
+  /* width: 0px; */
+  animation: reveal 7s infinite;
+}
+
+h1 {
+  /* margin-left: 10px; */
+
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+.checked {
+  color: red;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 100vw;
+}
+
+.each-slide > img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+  width: 100vw;
+}
+.search-container {
+  margin: 5px 0px;
+  display: flex;
+  justify-content: center;
+  justify-items: baseline;
+}
+.search-container input {
+  width: 500px;
+  height: 10%;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  color: grey;
+  padding: 8px 0 8px 10px;
+  margin-right: 50px;
+}
+.search-container input:focus {
+  outline: 0;
+}
+.rating-search {
+  color: #ff0800;
+  font-size: 1.5rem;
+}
