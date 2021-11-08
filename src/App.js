@@ -6,6 +6,7 @@ import Slideshow from "./components/Slideshow";
 import { useEffect, useState } from "react";
 import Title from "./components/filters/Title";
 import { Filmlist } from "./Filmlist";
+import AddMovie from "./components/AddMovie";
 
 function App() {
   const [movieList, setMovieList] = useState(Filmlist);
@@ -24,6 +25,11 @@ function App() {
       setMovieList(Filmlist.filter((el) => el.rating === ratingSearch));
   };
 
+  const addNewMovie = (newMovie) => {
+    Filmlist.push(newMovie);
+    setMovieList([...movieList, newMovie]);
+  };
+
   useEffect(() => {
     filterByName();
   }, [nameSearch]);
@@ -39,6 +45,7 @@ function App() {
         ratingSearch={ratingSearch}
         setRatingSearch={setRatingSearch}
       />
+      <AddMovie addNewMovie={addNewMovie} />
       <Slideshow />
       <div className="container">
         <MovieList movieList={movieList} />
