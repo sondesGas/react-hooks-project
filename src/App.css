@@ -272,3 +272,19 @@ form textarea:focus {
 .Modal-btn:focus {
   outline: 0;
 }
+.MovieDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  margin: auto;
+}
+
+.MovieDetails div {
+  margin-top: 10px;
+  color: rgb(56, 57, 58);
+}
+.MovieDetails .myBtn {
+  background-color: rgb(124, 8, 8);
+  color: white;
+}

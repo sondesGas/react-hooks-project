@@ -17,6 +17,7 @@ export const Filmlist = [
     Filmdirector: "Denis Villeneuve",
     date: "15 septembre 2021",
     rating: 5,
+    trailer: "https://www.youtube.com/embed/8g18jFHCLXk",
   },
   // film2
   {
@@ -28,6 +29,7 @@ export const Filmlist = [
     Filmdirector: " Cate Shortland",
     date: " 7 juillet 2021",
     rating: 4,
+    trailer: "https://www.youtube.com/embed/Fp9pNPdNwjI",
   },
   //   film3
   {
@@ -39,6 +41,7 @@ export const Filmlist = [
     Filmdirector: " Chloé Zhao ",
     date: "3 novembre 2021",
     rating: 3,
+    trailer: "https://www.youtube.com/embed/x_me3xsvDgk",
   },
   //   film4
   {
@@ -50,6 +53,7 @@ export const Filmlist = [
     Filmdirector: "Justin Lin",
     date: "14 juillet 2021",
     rating: 3,
+    trailer: "https://www.youtube.com/embed/FqAjVAf5fNA",
   },
   // film5
   {
@@ -61,6 +65,7 @@ export const Filmlist = [
     Filmdirector: "Doug Liman",
     date: "27 juillet 2021",
     rating: 2,
+    trailer: "https://www.youtube.com/embed/vWgGkpp5ReU",
   },
   // film6
   {
@@ -72,6 +77,7 @@ export const Filmlist = [
     Filmdirector: "Tim Story ",
     date: "19 mai 2021",
     rating: 3,
+    trailer: "https://www.youtube.com/embed/kP9TfCWaQT4",
   },
   // film7
   {
@@ -83,6 +89,7 @@ export const Filmlist = [
     Filmdirector: " Leos Carax ",
     date: "6 juillet 2021",
     rating: 2,
+    trailer: "https://www.youtube.com/embed/l_EaNpL16SU",
   },
   // film8
   {
@@ -94,5 +101,6 @@ export const Filmlist = [
     Filmdirector: " Zack Snyder ",
     date: " 18 mars 2021",
     rating: 4,
+    trailer: "https://www.youtube.com/embed/vM-Bja2Gy04",
   },
 ];

@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Rate from "./filters/Rate";
 
 const MovieCard = ({
-  film: { name, description, image, Filmdirector, date, rating },
+  film: { id, name, description, image, Filmdirector, date, rating },
 }) => {
   return (
     <div className="col-md-3">
@@ -18,7 +19,9 @@ const MovieCard = ({
 
           <p>{date}</p>
           <p>
-            <button className="button">Watch Movie</button>
+            <Link to={`/movies/${id}`}>
+              <button className="button">Watch Trailer</button>
+            </Link>
           </p>
         </div>
       </div>

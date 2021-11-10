@@ -7,6 +7,9 @@ import { useEffect, useState } from "react";
 import Title from "./components/filters/Title";
 import { Filmlist } from "./Filmlist";
 import AddMovie from "./components/AddMovie";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/page/Home";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   const [movieList, setMovieList] = useState(Filmlist);
@@ -40,17 +43,30 @@ function App() {
 
   return (
     <div className="app">
-      <Title
-        setNameSearch={setNameSearch}
-        ratingSearch={ratingSearch}
-        setRatingSearch={setRatingSearch}
-      />
-      <AddMovie addNewMovie={addNewMovie} />
-      <Slideshow />
-      <div className="container">
-        <MovieList movieList={movieList} />
-      </div>
-      <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/movies">
+            <Title
+              setNameSearch={setNameSearch}
+              ratingSearch={ratingSearch}
+              setRatingSearch={setRatingSearch}
+            />
+            <AddMovie addNewMovie={addNewMovie} />
+            <Slideshow />
+            <div className="container">
+              <MovieList movieList={movieList} />
+            </div>
+            <Footer />
+          </Route>
+          <Route
+            path="/movies/:id"
+            render={(props) => {
+              return <MovieDetails {...props} movies={movieList} />;
+            }}
+          />
+        </Switch>
+      </Router>
     </div>
   );
 }
